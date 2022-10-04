@@ -1,0 +1,229 @@
+*{
+	/*Alle werden so gestartet*/
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	overflow-wrap: break-word;
+	
+
+	font-family: 'Segoe UI', sans-serif;
+	font-style: normal;
+    font-weight: bold;
+}
+
+body.normal{
+	background: linear-gradient(-45deg, #15bcc2,#128589);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+	
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+	z-index: 0;
+	scroll-behavior: smooth;
+}
+body.produkte{
+	background: linear-gradient(-45deg, #72ecf0,#15bcc2);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+	
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+	z-index: 0;
+	scroll-behavior: smooth;
+	
+	overflow: scroll;
+}
+
+/*/////////////////////////////////*/
+
+header{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	background-color: #15bcc2;
+	color: white;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+
+header img{
+	float: left;
+}
+
+/*/////////////////////////////////*/
+
+nav{
+	display: inline-block;
+	width: 100%;
+	background-color: #0e8a8e;
+	text-align: center;
+}
+nav a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	color: rgb(255, 255, 255);
+	font-size: large;
+	font-weight: bold;
+}
+nav a:hover{
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+nav a:link{
+	background-color: #0e8a8e;
+	color: rgb(255, 255, 255);
+}
+
+
+/*/////////////////////////////////*/
+
+h1{
+	position: relative;
+	float: left;
+	margin: 73.2px;
+    font-size: 40px;
+    text-align: center;
+}
+h2{
+
+    font-size: 20pt;
+    text-align: center;
+}
+h3{
+	font-size: 15pt;
+	text-align: center;
+}
+h3.gross{
+	font-size: 20pt;
+	text-align: right;
+}
+
+/*/////////////////////////////////*/
+
+article.normal{
+	position: relative;
+}
+article.sonstige{
+	text-align: center;
+}
+/*/////////////////////////////////*/
+
+a:visited{
+	color: #ffffff;
+	background-color: #0e8a8e;
+	float: right;
+}
+
+
+.blocksatz{
+	text-align: justify;
+}
+
+.unten{
+	top: 500px;
+	
+	
+}
+.center{
+	align-items:center;
+    display: Inline-flex;
+}
+
+/*/////////////////////////////////*/
+
+table, th, td{
+	position: relative;
+	text-align: center;
+	border-style: groove;
+	border: 1px solid rgb(151, 151, 151);
+	border-collapse: collapse;
+	width: auto;
+	border-style: solid;
+
+	overflow: visible;
+}
+table caption{
+	text-align: center;
+}
+tr{
+	height: 100pt;
+}
+
+
+/*/////////////////////////////////*/
+
+input, textarea{
+	color: #000000;
+}
+
+select{
+	color: #000000;
+}
+select option{
+	color: #000000;
+}
+#sonderformate{
+	background-image: url(Smartphone-Website.gif );
+	color: #ff0000;
+}
+
+/*/////////////////////////////////*/
+
+
+
+ul{
+	display: block;
+	list-style: none;
+	width: 100%;
+	height: 50%;
+}
+li{
+	position: relative;
+	display: inline;
+	float: left;
+	width: 33%;
+	height: 100%;
+}
+li img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+li.zweier{
+	position: relative;
+	display: inline;
+	float: left;
+	width: 50%;
+	height: 100%;
+
+}
+li.einzel{
+	position: relative;
+	display: inline;
+	width: 100%;
+	height: 100%;
+
+}
+li input{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
